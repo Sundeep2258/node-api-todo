@@ -25,8 +25,7 @@ const initializeDBandServer = async () => {
 };
 initializeDBandServer();
 
-//get the list of todos
-/*
+//get the list of todos/*
 app.get("/todos/", async (request, response) => {
   const requestQuery = `select * from todo;`;
   const responseResult = await database.all(requestQuery);
